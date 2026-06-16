@@ -21,15 +21,13 @@ window.addEventListener('load', function() {
         }
     }
 
-    // --- ACTIVACIÓN Y CONTROL BI-DIRECCIONAL DEL CARRUSEL ---
     if (document.querySelector('.gallery-slider') && document.querySelector('.gallery-thumbs')) {
         
-        // Slider de imágenes grandes
         var slider = new Swiper('.gallery-slider', {
             slidesPerView: 1,
             centeredSlides: true,
             loop: true,
-            loopedSlides: 6, // Número exacto de tus imágenes
+            loopedSlides: 6, 
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
